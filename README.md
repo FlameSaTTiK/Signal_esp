@@ -69,8 +69,8 @@ dependencies:
                 +--------------+--------------+
                 |               |             |
         +-------v-------+ +-----v------+ +-----v------+
-        |  SIM7600E-H  | | U-blox NEO | | INMP441    |
-        |  (4G Module) | | 6M (GPS)   | | (Microphone|
+        |  SIM7600E-H  |  | U-blox NEO | | INMP441    |
+        |  (4G Module) |  | 6M (GPS)   | |(Microphone)|
         +-------+-------+ +-----+------+ +-----+------+
                 |               |             |
         +-------v-------+ +-----v------+ +-----v------+
@@ -79,10 +79,10 @@ dependencies:
         +---------------+ +-----------+ +------------+
 
         +---------------------------------------------+
-        |  Power Management System                   |
-        |  - 3000mAh Li-Po Battery                   |
-        |  - Charging Circuit                        |
-        |  - Voltage Regulators                     |
+        |  Power Management System                    |
+        |  - 3000mAh Li-Po Battery                    |
+        |  - Charging Circuit                         |
+        |  - Voltage Regulators                       |
         +---------------------------------------------+
 
 
@@ -110,7 +110,7 @@ dependencies:
                              v
                  +-----------------------+
                  | Sensor Input Received |
-                 | (Button Press/Motion)|
+                 | (Button Press/Motion) |
                  +-----------+-----------+
                              |
                              v
@@ -121,13 +121,13 @@ dependencies:
                   +----------+-----------+
                              |
                     +--------v--------+
-                    | Critical Event?|
-                    |     (Yes/No)   |
+                    | Critical Event? |
+                    |     (Yes/No)    |
                     +--------+--------+
                              |
              +---------------v---------------+
              |                               |
-    +--------v---------+           +---------v--------+
+    +--------v----------+           +---------v--------+
     | Activate Emergency|           |  Log Event Only  |
     | Protocol:         |           | (Non-critical)   |
     | - Send Location   |           +------------------+
