@@ -69,14 +69,14 @@ dependencies:
                 +--------------+--------------+
                 |               |             |
         +-------v-------+ +-----v------+ +-----v------+
-        |  SIM7600E-H  |  | U-blox NEO | | INMP441    |
-        |  (4G Module) |  | 6M (GPS)   | |(Microphone)|
+        |  SIM7600E-H   | | U-blox NEO | | INMP441    |
+        |  (4G Module)  | | 6M (GPS)   | |(Microphone)|
         +-------+-------+ +-----+------+ +-----+------+
                 |               |             |
         +-------v-------+ +-----v------+ +-----v------+
-        |  Cellular     | | GNSS      | | Audio      |
-        |  Antenna      | | Antenna   | | Processing |
-        +---------------+ +-----------+ +------------+
+        |  Cellular     | | GNSS       | | Audio      |
+        |  Antenna      | | Antenna    | | Processing |
+        +---------------+ +------------+ +------------+
 
         +---------------------------------------------+
         |  Power Management System                    |
