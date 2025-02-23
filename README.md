@@ -28,7 +28,7 @@
 
 ---
 
-## ⚠️ Problem Statement
+# ⚠️ Problem Statement
 
 **Overcoming smartphone-dependent safety limitations:**
 - 90% of existing solutions require smartphone connectivity
