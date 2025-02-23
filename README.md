@@ -56,3 +56,23 @@ dependencies:
   location: ^4.4.0
   firebase_core: ^2.15.1
   http: ^0.13.6
+```
+### System Architecture
+
+                    +---------------------+
+                    |   Mobile Application|
+                    |   (Flutter/IOS)     |
+                    +----------+----------+
+                               | HTTPS
+                    +----------v----------+
+                    |   Firebase Cloud    |
+                    |  - Realtime DB      |
+                    |  - Cloud Functions  |
+                    +----------+----------+
+                               | MQTT
+                    +----------v----------+
+                    |   Wearable Device   |
+                    |  - ESP32 Controller |
+                    +---------------------+
+
+                  
