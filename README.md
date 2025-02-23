@@ -57,7 +57,7 @@ dependencies:
   http: ^0.13.6
 ```
 
-** 🌐 Web Application Components
+## 🌐 Web Application Components
 
 ### Project Structure
 ```bash
