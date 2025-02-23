@@ -1,5 +1,4 @@
 # 🛡️ SafePal - Wearable Safety Device 
-![Project Banner](https://via.placeholder.com/1200x400.png?text=SafePal+Wearable+Safety+System) <!-- Replace with actual banner -->
 
 **A compact IoT device with GPS tracking, emergency alerts, and cellular communication for personal safety**
 
