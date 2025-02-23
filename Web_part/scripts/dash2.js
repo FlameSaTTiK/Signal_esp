@@ -3,7 +3,7 @@
 // Check if the user is logged in
 if (sessionStorage.getItem("loggedIn") !== "true") {
     // Redirect to login page if not logged in
-    window.location.href = "login.html";
+    window.location.href = "public/login.html";
 }
 
 let map;
