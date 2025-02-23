@@ -6,7 +6,6 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
 [![IoT Project](https://img.shields.io/badge/category-IoT_Safety_Device-blue)](https://github.com/topics/women-safety)
 [![Flutter App](https://img.shields.io/badge/Flutter-3.19-blue?logo=flutter)](https://flutter.dev)
-[![Open Issues](https://img.shields.io/github/issues/yourusername/SafePal)](https://github.com/yourusername/SafePal/issues)
 
 ## 🌟 Key Features
 - 📍 Real-time GPS Tracking with <5m accuracy
