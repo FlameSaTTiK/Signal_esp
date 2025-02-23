@@ -146,14 +146,38 @@ dependencies:
 
 ### Data Transmission Workflow
 
-+-------------+     +------------+     +-------------+     +-----------+
-|  Device     |     | Cellular   |     | Firebase    |     | Mobile    |
-| Sensors     +-----> Network    +-----> Cloud       +-----> App       |
-| - GPS       | 4G | - Encrypted | TLS | - Realtime  | API | - Alerts  |
-| - Audio     |     | Transmission|     | Database   |     | - Maps    |
-| - Motion    |     +------------+     | - Storage   |     +-----------+
-+-------------+                        +-------------+
-
++---------------------+
+|      Device         |
+|    Sensors          |
+|  - GPS              |
+|  - Audio            |
+|  - Motion           |
++---------------------+
+          |
+          | 4G
+          v
++---------------------+
+|   Cellular Network  |
+|  - Encrypted        |
+|    Transmission     |
+|  - TLS Security     |
++---------------------+
+          |
+          | API
+          v
++---------------------+
+|    Firebase Cloud   |
+|  - Realtime Database|
+|  - Storage          |
++---------------------+
+          |
+          | Data Sync
+          v
++---------------------+
+|     Mobile App      |
+|  - Alerts           |
+|  - Maps             |
++---------------------+
 ### Application Layer: Flutter Mobile App
 Middleware: Firebase Cloud Services
 Firmware: Arduino C++ (PlatformIO)
