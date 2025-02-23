@@ -57,8 +57,36 @@ dependencies:
   firebase_core: ^2.15.1
   http: ^0.13.6
 ```
-### System Architecture
+### 📐System Architecture
 
+
+### Hardware Block Diagram
+                    +---------------------+
+                    |   ESP32-WROOM-32    |
+                    | (Main Controller)   |
+                    +----------+----------+
+                               |
+                +--------------+--------------+
+                |               |             |
+        +-------v-------+ +-----v------+ +-----v------+
+        |  SIM7600E-H  | | U-blox NEO | | INMP441    |
+        |  (4G Module) | | 6M (GPS)   | | (Microphone|
+        +-------+-------+ +-----+------+ +-----+------+
+                |               |             |
+        +-------v-------+ +-----v------+ +-----v------+
+        |  Cellular     | | GNSS      | | Audio      |
+        |  Antenna      | | Antenna   | | Processing |
+        +---------------+ +-----------+ +------------+
+
+        +---------------------------------------------+
+        |  Power Management System                   |
+        |  - 3000mAh Li-Po Battery                   |
+        |  - Charging Circuit                        |
+        |  - Voltage Regulators                     |
+        +---------------------------------------------+
+
+
+### Mobile Application
                     +---------------------+
                     |   Mobile Application|
                     |   (Flutter/IOS)     |
@@ -75,4 +103,8 @@ dependencies:
                     |  - ESP32 Controller |
                     +---------------------+
 
-                  
+
+### Application Layer: Flutter Mobile App
+Middleware: Firebase Cloud Services
+Firmware: Arduino C++ (PlatformIO)
+Protocols: MQTT, HTTPS, NMEA
