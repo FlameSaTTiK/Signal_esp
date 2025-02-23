@@ -18,7 +18,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         sessionStorage.setItem("loggedIn", "true");
 
         // Redirect to the dashboard page
-        window.location.href = "dash2.html";
+        window.location.href = "public/dash2.html";
     } else {
         // Show an error message if credentials are incorrect
         alert("Invalid username or password. Please try again.");
