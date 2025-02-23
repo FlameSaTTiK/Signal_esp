@@ -21,7 +21,7 @@
 3. [Software Stack](#-software-stack)
 4. [System Architecture](#-system-architecture)
 5. [Results](#-results)
-6. [📊 Results & Validation](#-results-&-validation)
+6. [Results & Validation](#-results-&-validation)
 7. [Acknowledgements](#-acknowledgements)
 8. [License](#-license)
 
@@ -57,10 +57,29 @@ dependencies:
   http: ^0.13.6
 ```
 
+** 🌐 Web Application Components
+
+### Project Structure
+```bash
+safepal-web/
+├── public/
+│   ├── dash2.html       # Main dashboard
+│   ├── login.html       # Login page
+│   └── women.jpg        # Background image
+├── styles/
+│   ├── dash2.css        # Dashboard styles
+│   └── login.css        # Login page styles
+├── scripts/
+│   ├── dash2.js         # Dashboard functionality
+│   └── login.js         # Authentication logic
+└── README.md            # Documentation
+```
+
 ### 📐System Architecture
 
 
 ### Hardware Block Diagram
+```ascii
                     +---------------------+
                     |   ESP32-WROOM-32    |
                     | (Main Controller)   |
@@ -84,9 +103,10 @@ dependencies:
         |  - Charging Circuit                         |
         |  - Voltage Regulators                       |
         +---------------------------------------------+
-
+```
 
 ### Mobile Application
+```ascii 
                     +---------------------+
                     |   Mobile Application|
                     |   (Flutter/IOS)     |
@@ -102,9 +122,10 @@ dependencies:
                     |   Wearable Device   |
                     |  - ESP32 Controller |
                     +---------------------+
-
+```
 ### Emergency Alert Workflow
 
+```ascii
                           [Start]
                              |
                              v
@@ -143,7 +164,7 @@ dependencies:
              |
              v
           [End]
-
+```
 ### Data Transmission Workflow
 
 ```ascii
@@ -205,3 +226,5 @@ performance = {
 Middleware: Firebase Cloud Services
 Firmware: Arduino C++ (PlatformIO)
 Protocols: MQTT, HTTPS, NMEA
+
+
