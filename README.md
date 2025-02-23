@@ -146,6 +146,7 @@ dependencies:
 
 ### Data Transmission Workflow
 
+```ascii
 +---------------------+
 |      Device         |
 |    Sensors          |
@@ -178,6 +179,7 @@ dependencies:
 |  - Alerts           |
 |  - Maps             |
 +---------------------+
+```                                    
 ### Application Layer: Flutter Mobile App
 Middleware: Firebase Cloud Services
 Firmware: Arduino C++ (PlatformIO)
