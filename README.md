@@ -103,6 +103,56 @@ dependencies:
                     |  - ESP32 Controller |
                     +---------------------+
 
+### Emergency Alert Workflow
+
+                          [Start]
+                             |
+                             v
+                 +-----------------------+
+                 | Sensor Input Received |
+                 | (Button Press/Motion)|
+                 +-----------+-----------+
+                             |
+                             v
+                  +----------------------+
+                  | Threat Verification |
+                  |  - Audio Analysis   |
+                  |  - Location Check   |
+                  +----------+-----------+
+                             |
+                    +--------v--------+
+                    | Critical Event?|
+                    |     (Yes/No)   |
+                    +--------+--------+
+                             |
+             +---------------v---------------+
+             |                               |
+    +--------v---------+           +---------v--------+
+    | Activate Emergency|           |  Log Event Only  |
+    | Protocol:         |           | (Non-critical)   |
+    | - Send Location   |           +------------------+
+    | - Transmit Audio  |
+    | - Notify Contacts |
+    +--------+----------+
+             |
+             v
+    +------------------+
+    | Confirm Delivery |
+    | to Cloud & SMS   |
+    +------------------+
+             |
+             v
+          [End]
+
+### Data Transmission Workflow
+
++-------------+     +------------+     +-------------+     +-----------+
+|  Device     |     | Cellular   |     | Firebase    |     | Mobile    |
+| Sensors     +-----> Network    +-----> Cloud       +-----> App       |
+| - GPS       | 4G | - Encrypted | TLS | - Realtime  | API | - Alerts  |
+| - Audio     |     | Transmission|     | Database   |     | - Maps    |
+| - Motion    |     +------------+     | - Storage   |     +-----------+
++-------------+                        +-------------+
 
 ### Application Layer: Flutter Mobile App
 Middleware: Firebase Cloud Services
