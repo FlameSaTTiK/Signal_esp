@@ -27,7 +27,7 @@
 
 ## Problem Statement ⚠️
 **Overcoming smartphone-dependent safety limitations:**
-diff
+
 + 90% of existing solutions require smartphone connectivity
 + 65% emergency cases involve phone unavailability
 + 40% safety app failures due to network issues
