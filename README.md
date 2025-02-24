@@ -121,7 +121,7 @@ safepal-web/
                                | MQTT
                     +----------v----------+
                     |   Wearable Device   |
-                    |  - ESP32 Controller |
+                    | -ESP8266mcontroller |
                     +---------------------+
 ```
 ### Emergency Alert Workflow
