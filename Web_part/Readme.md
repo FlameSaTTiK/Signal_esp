@@ -15,10 +15,9 @@
 - User authentication system
 
 **Technology Stack**:
-- Frontend: HTML5, CSS3, Vanilla JavaScript
+- Frontend: HTML5, CSS3, JavaScript, Node
 - Mapping: Google Maps JavaScript API
 - Storage: Browser sessionStorage
-- Build: Zero-dependency vanilla implementation
 
 ---
 
