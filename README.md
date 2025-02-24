@@ -44,6 +44,7 @@
 | **Microcontroller** | ESP8266 Wifi Module | - Dual-core 32-bit LX106 CPU<br>- 80MHz Clock Speed<br>- 80KB SRAM<br>- 16MB Flash |
 | **GPS Module** | U-blox NEO-6M | - 72-channel GNSS receiver<br>- 2.5m Position Accuracy<br>- 5Hz Update Rate |
 | **4G Module** | SIMCOM SIM7600E-H | - LTE Cat 4 (150Mbps DL)<br>- Quad-band 850/900/1800/1900MHz |
+| **Mic** | Microphone |  |
 | **Power System** | Li-Po 3000mAh | - 72hr runtime<br>- Fast charging support<br>- Overcharge protection |
 
 ### Software Stack
