@@ -82,7 +82,7 @@ safepal-web/
 ### Hardware Block Diagram
 ```ascii
                     +---------------------+
-                    |   ESP32-WROOM-32    |
+                    | ESP8266 Wifi Module |
                     | (Main Controller)   |
                     +----------+----------+
                                |
@@ -110,7 +110,7 @@ safepal-web/
 ```ascii 
                     +---------------------+
                     |   Mobile Application|
-                    |   (Flutter/IOS)     |
+                    |   (Flutter)         |
                     +----------+----------+
                                | HTTPS
                     +----------v----------+
