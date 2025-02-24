@@ -92,7 +92,7 @@ safepal-web/
         |  SIM7600E-H   | | U-blox NEO | | INMP441    |
         |  (4G Module)  | | 6M (GPS)   | |(Microphone)|
         +-------+-------+ +-----+------+ +-----+------+
-                |               |             |
+                |               |              |
         +-------v-------+ +-----v------+ +-----v------+
         |  Cellular     | | GNSS       | | Audio      |
         |  Antenna      | | Antenna    | | Processing |
@@ -149,7 +149,7 @@ safepal-web/
                              |
              +---------------v---------------+
              |                               |
-    +--------v----------+           +---------v--------+
+    +--------v----------+           +--------v---------+
     | Activate Emergency|           |  Log Event Only  |
     | Protocol:         |           | (Non-critical)   |
     | - Send Location   |           +------------------+
@@ -164,7 +164,7 @@ safepal-web/
     +------------------+
              |
              v
-          [End]
+           [End]
 ```
 ### Data Transmission Workflow
 
@@ -174,7 +174,7 @@ safepal-web/
 |    Sensors          |
 |  - GPS              |
 |  - Audio            |
-|  - Motion           |
+|                     |
 +---------------------+
           |
           | 4G
